@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body { 
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.primary-nav {
+  width: 300px;
+  color: #ffffff;
+  padding: 15px;
+  background-color: #262626;
+  align-items: center;
+}
+.titleBar {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.titleBar > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-bottom: 17px;
+}
+ul>li {
+  padding: 10px 7px 10px;
+  border-radius: 5px;
+}
+ul>li:hover {
+  background-color: #322F2A;
+  cursor: pointer;
+}
+ul>li:active{
+  background-color: #472525;
+}
+.display-div {
+  background-color: #1E1E1E;
+  flex-grow: 1;
+  color: #ffffff;
+  padding: 30px;
+}
+.mainSpanStyle {
+  margin: 10px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.mainDisplayIcons1 {
+
+}
+.mainDisplayIcons2 {
+
+}
+.mainHeaderStyle {
+  margin-bottom: 25px;
+}
+.mainAddTaskStyle {
+
+}
+.mainAddTaskStyle span {
+  color: #DE4C4A;
+  margin-right: 5px;
+}
