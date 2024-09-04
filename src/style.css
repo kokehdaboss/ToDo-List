@@ -13,24 +13,57 @@ body {
   color: #ffffff;
   padding: 15px;
   background-color: #262626;
-  align-items: center;
+/*  align-items: center;*/
 }
 .titleBar {
   display: flex;
   align-items: center;
-  font-weight: 700;
+  justify-content: space-between;
 }
-.titleBar > img {
+.pic-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 2px 7px;
+}
+.pic-name > img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 5px;
 }
+.pic-name:hover {
+  background-color: #322F2A;
+  border-radius: 3px;
+}
+.nameSpace {
+  font-weight: 700;
+}
+.icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.notificationIcon, .sideBarIcon {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  align-items: center;
+}
+.notificationIcon:hover, .sideBarIcon:hover{
+  background-color: #322F2A;
+  border-radius: 5px;
+}
+/*.sideBarIcon:hover {
+  background-color: #322F2A;
+  border-radius: 5px;
+}*/
 ul{
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 ul>li {
   padding: 10px 7px 10px;
@@ -42,6 +75,23 @@ ul>li:hover {
 }
 ul>li:active{
   background-color: #472525;
+}
+.favorites {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+}
+.project-button {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.project:active {
+  font-weight: 700;
 }
 .display-div {
   background-color: #1E1E1E;
@@ -64,9 +114,19 @@ ul>li:active{
   margin-bottom: 25px;
 }
 .mainAddTaskStyle {
-
+  cursor: pointer;
 }
 .mainAddTaskStyle span {
   color: #DE4C4A;
+  padding: 0 0px 0 5px;
   margin-right: 5px;
+  font-size: 20px;
+}
+.mainAddTaskStyle:hover {
+  color: #DE4C4A;
+}
+.mainAddTaskStyle span:hover {
+  color: white;
+  background-color: #DE4C4A;
+  border-radius: 50px;
 }
