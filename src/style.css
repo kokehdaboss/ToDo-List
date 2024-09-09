@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-body { 
+body {
   display: flex;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,20 @@ body {
   color: #ffffff;
   padding: 15px;
   background-color: #262626;
-/*  align-items: center;*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+#resize-handle {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #262626;
+  cursor: ew-resize;
 }
 .titleBar {
   display: flex;
@@ -116,18 +129,19 @@ ul>li:active{
   flex-grow: 1;
   color: #ffffff;
   padding: 30px;
+  margin-left: 300px;
 }
 .mainSpanStyle {
   margin: 10px 0 30px;
   display: flex;
   justify-content: space-between;
 }
-.mainDisplayIcons1 {
+/* .mainDisplayIcons1 {
 
 }
 .mainDisplayIcons2 {
 
-}
+} */
 .mainHeaderStyle {
   margin-bottom: 25px;
 }
